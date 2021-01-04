@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&family=Xanh+Mono:ital@1&display=swap');
+
+.nav-item a,span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(104, 103, 103);
+}
+.navbar-brand{
+    font-family: 'Xanh Mono', monospace;
+    font-size: 3rem;
+    font-weight: bold;
+    color:black;
+}
+.nav-link{
+    font-size: 1rem !important;
+    margin-right: 5rem;
+}
+.form-group{
+    width: 100%;
+    margin: 0 !important;
+}
+.searchform{
+    width: 18rem;
+    position: relative;
+    right: -100%;
+    top: 20%;
+}
+.editcontent{
+    margin-bottom: 5rem !important;
+}

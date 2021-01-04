@@ -1,0 +1,216 @@
+body {
+    background-color: rgba(48, 65, 65, 0.089);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+header {
+    font-size: 1.5rem;
+    text-align: center;
+}
+/* 画面切り替えのため（表示・非表示） */
+.content {
+    display: none;
+    width: 50%;
+}
+.content.active {
+    display: block;
+    margin: 0;
+    width: 50%;
+    position: relative;
+    left: 30%;
+}
+
+/* タイムライン （ホーム画面）*/
+#list p {
+    font-size: 1.5rem;
+}
+#list ul {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+#timeline {
+    width: 100%;
+    position: relative;
+    left: -30%;
+}
+
+.timelineitem {
+    width: 100%;
+    height: 20rem;
+    margin: o;
+    background-color: white;
+    border: solid 1px lightgray;
+    margin-bottom: 2rem;
+}
+.timelineitem header {
+    margin: 0;
+    height: 15%;
+}
+.timelinecontent {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.timelinecontent ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+.timelinecontent ul li {
+    margin-top: 0.8rem;
+}
+.timelinecontent ul:nth-child(2) {
+    left: 0;
+    margin-left: 3rem;
+}
+.timelinecontent ul:nth-child(3) {
+    left: 30%;
+}
+.timelinecontent ul:nth-child(4) {
+    left: 60%;
+}
+.timelinecontent ul:nth-child(4) li {
+    margin: 0;
+}
+.timelinecontent ul:nth-child(4) div {
+    width: 15rem;
+    height: 10rem;
+    font-size: 13px;
+}
+.timelinecontent ul:nth-child(5) {
+    height: 2rem;
+    top: 85%;
+    right: 5%;
+    margin: 0;
+}
+.getday {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: start;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+}
+.listfreetext {
+    margin-bottom: 1.5rem;
+}
+/* タイムラインのアイコン */
+.favorite_icon {
+    margin-right: 3rem;
+}
+.color {
+    color: rgba(224, 38, 78, 0.849);
+}
+.edit_icon {
+    margin-right: 3rem;
+}
+/* マイページ */
+.mycontent {
+    display: none;
+    width: 100%;
+}
+.mycontent.active {
+    display: block;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    left: 10%;
+}
+.mypagetimeline {
+    position: relative;
+    left: -25%;
+}
+.favoritetimeline {
+    position: relative;
+    left: -25%;
+}
+/* マイページのログ保存店名候補表示 */
+#select-shopname {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(2, 2, 2, 0.329);
+    overflow: auto;
+    z-index: 10;
+}
+.select-modal{
+    background-color:white;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+}
+.select-shopcontent {
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+.attention {
+        position: absolute;
+    top: 60%;
+    left: 35%;
+}
+.select-modal-close {
+    position: fixed;
+    top: 15%;
+    right: 20%;
+    color: black;
+}
+/* 検索結果表示画面 */
+#searchmodal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(41, 39, 39, 0.589);
+    overflow: auto;
+}
+#searchtimeline {
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+.no-scroll {
+    overflow: hidden;
+}
+.fa-window-close {
+    position: fixed;
+    top: 15%;
+    right: 20%;
+    color: black;
+}
+/* マップ画面 */
+#mymap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.none {
+    display: none;
+}
