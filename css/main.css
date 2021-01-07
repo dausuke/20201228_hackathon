@@ -180,6 +180,11 @@ header {
     color: black;
 }
 /* 検索結果表示画面 */
+.searchform{
+    position: fixed;
+    top: 20%;
+    right: 0;
+}
 #searchmodal {
     display: none;
     position: fixed;
